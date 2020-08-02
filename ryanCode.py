@@ -6,7 +6,7 @@ s = input("Second value: ")
 s = int(s)
 Edit1 = "Hello"
 
-answer = i * s
+answer = i + s
 answer = str(answer)
-print(str(i) + " * " + str(s) + " = " + answer)
+print(str(i) + " + " + str(s) + " = " + answer)
 print(Edit1)
