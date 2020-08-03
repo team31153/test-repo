@@ -6,6 +6,6 @@ s = input("Second value: ")
 s = int(s)
 
 
-answer = i / s
+answer = i - s
 answer = str(answer)
-print(str(i) + " / " + str(s) + " = " + answer)
+print(str(i) + " - " + str(s) + " = " + answer)
