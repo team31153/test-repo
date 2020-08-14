@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import turtle
-import time
 import random
 wn = turtle.Screen()
 pen = turtle.Turtle()
@@ -18,12 +17,12 @@ def change_color():
 
 
     pen.color(R,G,B)
-for i in range(15):
+for i in range(20):
     change_color()
     for i in range(4):
 
         pen.forward(150)
-        pen.right(90)
-    pen.right(24)
+        pen.left(90)
+    pen.right(18)
 
 wn.mainloop()
