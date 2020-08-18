@@ -30,11 +30,8 @@ def change_color():
 
     pen.color(R,G,B)
 
-def drawspiral1():
+def drawspiral1(angle, size, increase):
 
-    global increase
-    global angle
-    global size
     for i in range(25):
         R = random.randrange(0, 257, 10)
         B = random.randrange(0, 257, 10)
@@ -46,7 +43,7 @@ def drawspiral1():
         pen.right(angle)
         pen.forward(size)
 
-def drawspiral2():
+def drawspiral2(angle2, size2, increase2):
 
     global increase2
     global angle2
@@ -62,7 +59,9 @@ def drawspiral2():
         pen.right(angle2)
         pen.forward(size2)
 
-drawspiral1()
+drawspiral1(angle, size, increase)
+
+
 distance = size / 2
 distance = distance * -1
 pen.penup()
@@ -71,6 +70,7 @@ pen.left(90)
 pen.forward(distance)
 pen.left(90)
 pen.down()
-drawspiral2()
+
+drawspiral2(angle2, size2, increase2)
 
 wn.mainloop()

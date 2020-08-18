@@ -6,11 +6,9 @@ wn = turtle.Screen()
 pen = turtle.Turtle()
 pen.pensize(5)
 pen.speed(7)
-length = 0
+length1 = 0
 
-def drawSquare():
-    global length
-    length = length + 20
+def drawSquare(length):
     for i in range(4):
         pen.down()
         pen.forward(length)
@@ -23,6 +21,8 @@ def drawSquare():
 
 
 for i in range(5):
-    drawSquare()
+    length1 = length1 + 20
+    drawSquare(length1)
+
 
 wn.mainloop()
