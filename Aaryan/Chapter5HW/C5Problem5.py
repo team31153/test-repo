@@ -1,1 +1,8 @@
-#!/usr/bin/env python3
+True
+True
+True
+True
+True
+True
+False
+True
